@@ -1,1 +1,25 @@
+spring:
+    boot:
+      admin:
+        client:
+          uri: http://localhost:9090/
+    datasource:
+      username: root
+      password: swami1
+      url: jdbc:mysql://localhost:3306/patil_ecomm
+
+    jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+ 
+management:
+   endpoints:
+     web:
+       exposure:
+         include: "*"
+      
+server:
+  port: 7072
+  
 
